@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fire Island Records</title>
+  <link rel="icon" type="image/png" href="./Fire Island Records.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: black;
+      color: white;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('./4th July 2020 Aerial.jpg') center center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('./D5979E77-9255-4BA9-8ECC-A3FC28E92CCA.PNG') repeat;
+      opacity: 0.2;
+      animation: slide 40s linear infinite;
+    }
+    @keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -1000px 0; }
+    }
+    .hero-logo {
+      z-index: 2;
+      max-width: 300px;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .photo-section {
+      background: url('./boardwalk into the pines.png') center center/cover no-repeat;
+      height: 60vh;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <img src="./Fire Island Records.png" alt="Fire Island Records Logo" class="hero-logo" />
+  </header>
+
+  <section>
+    <h1>Welcome to Fire Island Records</h1>
+    <p>Where sonic desire meets algorithmic edge.<br /></p>
+  </section>
+
+  <div class="photo-section"></div>
+
+  <section>
+    <p>More soon.<br />
+    <a href="mailto:hello@fireislandrecords.com" style="color: #ff6666; text-decoration: none;">Contact Us</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Fire Island Records – A Division of Anthony West Inc.
+  </footer>
+</body>
+</html>
